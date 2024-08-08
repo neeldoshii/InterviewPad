@@ -1,0 +1,42 @@
+body {
+  background-color: #161616;
+ 
+}
+
+.title-heading{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle-heading{
+  color: #D0D0D0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+  font-style: normal;
+  text-align: center;
+}
+
+/* .join-meeting{
+  width: 100vh;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #282938;
+  margin: 0 auto;
+  color : white
+} */
+
+.usernameLabel{
+  
+}
+
+.username{
+  margin-top: 8px;
+}

@@ -22,8 +22,8 @@ body {
   text-align: center;
 }
 
-/* .join-meeting{
-  width: 100vh;
+.join-meeting{
+  width: 400px;
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,8 @@ body {
   background-color: #282938;
   margin: 0 auto;
   color : white
-} */
+}
+
 
 .usernameLabel{
   

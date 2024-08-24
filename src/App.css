@@ -1,6 +1,5 @@
 body {
   background-color: #161616;
- 
 }
 
 .title-heading{
@@ -10,6 +9,7 @@ body {
   font-style: normal;
   font-size: 40px;
   text-align: center;
+  margin-top: 20vh;
 }
 
 .subtitle-heading{
@@ -22,21 +22,17 @@ body {
   text-align: center;
 }
 
-/* .join-meeting{
-  width: 100vh;
-  align-content: center;
+.container-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+.join-meeting{
+  margin-top: 40px;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  padding: 16px;
   background-color: #282938;
-  margin: 0 auto;
-  color : white
-} */
-
-.usernameLabel{
-  
-}
-
-.username{
-  margin-top: 8px;
+  padding: 16px;
+  border-radius: 12px;
 }

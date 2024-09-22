@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, } from "react";
 import MainLayout from "../../MainLayout";
 import "./codeEditor.css";
 import AvatarComponent from "../../components/AvatarComponent";
 import MonacoEditor from "../../components/MonacoEditor";
 import LanguageSelect from "../../components/LanguageSelect";
+import { useParams } from "react-router-dom";
 
 
 
@@ -13,6 +14,9 @@ const CodeEditor = () => {
     1: "Vishank",
     2: "sas sas",
   };
+  const params = useParams();
+  console.log(params);
+  
 
   const [selectedLanguage, setSelectedLanguage] = useState("Javascript");
 

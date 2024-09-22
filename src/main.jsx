@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   //   element: <CodeEditor />
   // }
   {
-    path: "/code",
+    path: "/code/:roomId",
     element: <CodeEditor />
   }
 ]);

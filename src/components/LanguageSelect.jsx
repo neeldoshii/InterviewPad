@@ -4,6 +4,7 @@ import { LANGUAGES } from "../const";
 
 const LanguageSelect = ({ selectedLanguage, selectedLanguageKey ,onSelect}) => {
   const entries = Object.entries(LANGUAGES);
+  // This is test push to teach my friend git ;)
 
   return (
     <Dropdown>

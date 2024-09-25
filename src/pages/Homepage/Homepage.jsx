@@ -1,17 +1,41 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
-import App from "../App";
-import MainLayout from "../MainLayout";
+import App from "../../App";
+import MainLayout from "../../MainLayout";
 import { Link, useNavigate} from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import { SHOWTOAST, ToastType } from "../const";
+import { SHOWTOAST, ToastType } from "../../const";
+import io from 'socket.io-client';
 
 const Homepage = () => {
   const [roomId, setRoomId] = useState("");
   const [username, setUsername] = useState("");
   const navigation = useNavigate();
+
+  // const socket = io('http://localhost:3000/',  { transports: ['websocket'] })
+  // useEffect(() => {
+  //   // Listen for connection event
+  //   socket.on("connect", () => {
+  //     console.log("User Connected", socket.id);
+  //   });
+
+  //   // Listen for disconnection event
+  //   socket.on("disconnect", () => {
+  //     console.log("User Disconnected", socket.id);
+  //   });
+
+  //   // Clean up when the component unmounts
+  //   return () => {
+  //     socket.disconnect();
+  //   };
+  // }, [socket]);
+
+  // io.on("sockety-id", (socket)=>{
+  //   io.emit("socket.id", socket.id)
+  // })
+  
 
   const generateRoomUUID = () => {
     setRoomId(uuidv4());

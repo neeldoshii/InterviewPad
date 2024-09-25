@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import Homepage from "./pages/Homepage.jsx";
+import Homepage from "./pages/Homepage/Homepage.jsx";
 import CodeEditor from "./pages/CodeEditor/CodeEditor.jsx";
 
 
-
+// https://www.youtube.com/watch?v=oTIJunBa6MA
 const router = createBrowserRouter([
   {
     path: "/",

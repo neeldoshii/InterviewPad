@@ -11,6 +11,13 @@ const LANGUAGE_VERSIONS = {
     cpp :'10.2.0',
 };
 
+export const LANGUAGES = {
+  JAVASCRIPT  : "javascript",
+  PYTHON      : "python",
+  JAVA        : "java",
+  PHP         : "php"
+}
+
 export const ToastType = {
     INFO    : "INFO",
     WARNING : "WARNING",
@@ -19,7 +26,7 @@ export const ToastType = {
     DEFAULT : "DEFAULT"
 };
 
-export const SHOWTOAST = (msg, type) =>{
+export const SHOWTOAST = (msg, type) => {
     switch(type){
       case ToastType.WARNING:
         toast.warning(msg)

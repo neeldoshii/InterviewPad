@@ -1,4 +1,4 @@
-import Header from './components/Header';
+// import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div style={{ height: "100vh" }} className="container">
         <h1 className='title-heading'>Lorem Ipsum is simply dummy text.</h1>
         <h2 className='subtitle-heading'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>

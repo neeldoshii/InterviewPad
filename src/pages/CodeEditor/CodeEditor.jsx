@@ -19,6 +19,7 @@ const CodeEditor = () => {
   
 
   const [selectedLanguage, setSelectedLanguage] = useState("Javascript");
+  const [seletecLanguageKey, setSelectedLanguageKey] = useState("JAVASCRIPT")
 
   const handleSelection = (language) =>{
     setSelectedLanguage(language)
@@ -36,9 +37,9 @@ const CodeEditor = () => {
       <div className="row">
         <div className="column column-1">
           <div style={{ marginLeft: "16px", marginRight: "16px" }}>
-            <h3 style={{ marginTop: "16px" }}>Problem Title</h3>
+            <h3 style={{ marginTop: "16px", color : "white" }}>Problem Title</h3>
             <hr />
-            <p>
+            <p style={{color : "white"}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum is simply dummy text of the
@@ -58,7 +59,7 @@ const CodeEditor = () => {
               text of the printing and typesetting industry.
             </p>
 
-            <h3>Connected Members</h3>
+            <h3 style={{color : "white"}}>Connected Members</h3>
             <hr />
             <div
               style={{
@@ -76,7 +77,7 @@ const CodeEditor = () => {
         </div>
         <div className="column column-2">
           <LanguageSelect selectedLanguage = {selectedLanguage} onSelect = {handleSelection}/>
-          < MonacoEditor/>
+          <MonacoEditor selectedLanguage = {selectedLanguage}/>
         </div>
       </div>
     </div>

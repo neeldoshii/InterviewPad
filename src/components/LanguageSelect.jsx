@@ -1,20 +1,26 @@
-import React from 'react'
-import Dropdown from 'react-bootstrap/Dropdown';
+import React from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import { LANGUAGES } from "../const";
 
-const LanguageSelect = ({selectedLanguage, onSelect}) => {
+const LanguageSelect = ({ selectedLanguage, selectedLanguageKey ,onSelect}) => {
+  const entries = Object.entries(LANGUAGES);
+
   return (
     <Dropdown>
-      <Dropdown.Toggle  id="dropdown-basic" style= {{}}>
+      <Dropdown.Toggle id="dropdown-basic" style={{}}>
         {selectedLanguage}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item eventKey={"Javascript"} onClick = {() => onSelect("ffg")}>sssss</Dropdown.Item>
-        <Dropdown.Item eventKey={"Javascripsdt"} onClick={() => onSelect("JavaScrs")}>Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        {entries.map(([key, value]) => (
+          // console.log(key,value)
+          <Dropdown.Item eventKey={{ key }} onClick={() => onSelect(value)}>
+            {value}
+          </Dropdown.Item>
+        ))}
       </Dropdown.Menu>
     </Dropdown>
-  )
-}
+  );
+};
 
-export default LanguageSelect
+export default LanguageSelect;

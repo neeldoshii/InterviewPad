@@ -1,23 +1,22 @@
 import React from "react";
 import Editor from "@monaco-editor/react";
+import { DEFAULT_LANGUAGE } from "../const";
 
-const MonacoEditor = ({selectedLanguage}) => {
-  const defaultCode = 
-  `// Online Python compiler (interpreter) to run Python online.`+ `\n`+
-  `// Write Python 3 code in this online editor and run it.`+ `\n` +
-  `print("IDE -- Python")`;
+
+const MonacoEditor = ({selectedLanguage ,selectedLanguageKey, editorValue, setEditorValue}) => {
+  // console.log(DEFAULT_LANGUAGE[selectedLanguageKey]);
   
-  console.log(selectedLanguage);
+  
   return (
     
     <Editor
       height="90vh"
       defaultLanguage= "python"
       language={selectedLanguage}
-      
-      defaultValue = {defaultCode}
+      defaultValue = {DEFAULT_LANGUAGE[selectedLanguageKey]}
       theme="vs-dark"
-      value=""
+      value={editorValue}
+      onChange={(value)=>setEditorValue(value)}
     />
     
     

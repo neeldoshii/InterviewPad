@@ -2,9 +2,8 @@ import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { LANGUAGES } from "../const";
 
-const LanguageSelect = ({ selectedLanguage, selectedLanguageKey ,onSelect}) => {
+const LanguageSelect = ({ selectedLanguage, selectedLanguageKey, onSelect }) => {
   const entries = Object.entries(LANGUAGES);
-  
 
   return (
     <Dropdown>
@@ -15,7 +14,12 @@ const LanguageSelect = ({ selectedLanguage, selectedLanguageKey ,onSelect}) => {
       <Dropdown.Menu>
         {entries.map(([key, value]) => (
           // console.log(key,value)
-          <Dropdown.Item eventKey={{ key }} onClick={() => onSelect(value)}>
+          <Dropdown.Item eventKey={key} onClick={
+            () => {
+              onSelect(value)
+              selectedLanguageKey(key)
+            }}
+          >
             {value}
           </Dropdown.Item>
         ))}

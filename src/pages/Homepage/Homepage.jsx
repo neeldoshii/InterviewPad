@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import App from "../../App";
 import MainLayout from "../../MainLayout";
+import './homepage.css'
 import { Link, useNavigate} from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { ToastContainer, toast } from "react-toastify";
@@ -58,8 +59,8 @@ const Homepage = () => {
 
   return (
     // For dynamic purpose not needed here but used for learning purposes and scalablity.
-    <MainLayout>
-      <div style={{ height: "100%" }} className="container">
+    // <MainLayout>
+      <div style={{ height: "100%",  }} className="container">
         <h1 className="title-heading">Lorem Ipsum is simply dummy text.</h1>
         <h2 className="subtitle-heading">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -121,7 +122,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-    </MainLayout>
+    // </MainLayout>
   );
 };
 

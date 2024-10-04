@@ -46,6 +46,7 @@ const InterviewerLogin = () => {
 		setShow(true)	
 	}
 
+  };
 
   const handlePassword = () => {};
 

@@ -8,6 +8,7 @@ import InterviewerLandingPage from "./pages/InterviewerLandingPage/InterviewerLa
 import InterviewerHomepage from "./pages/Interviewer/InterviewerHomepage.jsx";
 import InterviewCandidatesInvite from "./pages/Interviewer/InterviewCandidatesInvite.jsx";
 import InterviewTestCases from "./pages/Interviewer/InterviewTestCases.jsx";
+import InterviewerLogin from "./pages/Interviewer_Login-Signup/InterviewerLogin.jsx";
 
 
 // https://www.youtube.com/watch?v=oTIJunBa6MA
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path : "/dev-interviewer-homepage/homepage/tests",
     element: <InterviewTestCases />
+  },
+  {
+    path: "/dev-interviewer-homepage/login",
+    element : <InterviewerLogin />
   }
 ]);
 
